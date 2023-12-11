@@ -1,5 +1,21 @@
 @import url(reset.css);
 
+@font-face {
+  font-family: 'Hedvig Letters Serif 24pt';
+  src: url('../fonts/HedvigLettersSerif-24ptRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/Merriweather-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* HOME */
 
 .header-home{
@@ -18,6 +34,7 @@
   text-align: center;
   padding: 10px 0;
   text-transform: uppercase;
+  font-family: 'Merriweather';
 }
 
 .header__list-home > li{
@@ -64,18 +81,19 @@
 }
 
 .main_home img{
-  padding: 50px 0;
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+  height: 100%;
 }
 
 /* POSITION */
-
 .container_galery{
-  max-width: 1000px;
   margin: 0 auto;
+  width: 1000px;
 }
-
 .header{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hedvig Letters Serif 24pt';
   font-size: 30px;
   padding: 40px 0;
   background: 	#D8BFD8;
@@ -98,7 +116,7 @@
 .main{
   background:#FFEFD5;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hedvig Letters Serif 24pt';
   color: black;
 }
 
@@ -156,10 +174,10 @@
 }
 
 /* MODRIANA */
+
 .container{
-  margin: 0 auto;
+  margin: 0px auto;
   width: 1200px;
-  padding: 50px 0;
 }
 .fz_0{
   font-size: 0;
@@ -193,6 +211,10 @@
   height: 400px;
 }
 
+.w_600{
+  width: 600px;
+}
+
 .w_800{
   width: 800px;
 }
@@ -219,6 +241,19 @@
 
 .bg_blue{
   background: blue;
+}
+
+.bg_pink{
+  background: lightpink;
+}
+
+.bg_yellow{
+  background: lightgoldenrodyellow;
+}
+
+.container_table{
+  margin: 50px auto;
+  width: 600px;
 }
 
 
