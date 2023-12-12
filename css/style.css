@@ -60,9 +60,13 @@
   display: none;
 }
 
+.second__list-home li:nth-child(4) {
+  position: relative;
+}
+
 .second-list-flex{
 	position: absolute;
-	top: 108px;
+	top: 0;
 	right: 100%;
   width: 100%;
   display: none;
