@@ -18,8 +18,18 @@
 
 /* HOME */
 
+.wrapper{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.main_home{
+  flex: 1;
+}
+
 .header-home{
-  background: linear-gradient(to top left, #cc99ff 0%, #ffffcc 67%);
+  background: linear-gradient(to top left, #542c7c 0%, #eb6095 );
 }
 
 .container-home{
@@ -42,14 +52,29 @@
 }
 
 .header__list-home li a{
-  display: block;
+  display: inline-block;
   text-decoration: none;
-  padding: 10px 25px;
-	background: linear-gradient(to top left, #cc33ff 0%, #ccffff 67%);
+  padding: 10px 30px;
 	white-space: nowrap;
   border-radius: 4px;
   color: #080000;
   font-weight: 600;
+  background: rgb(155, 84, 94);
+}
+
+.header__list-home>li:first-child a{
+  background: rgb(155, 84, 94) url(../img/home.svg) no-repeat 10px 1px/30px;
+  padding-left: 50px;
+}
+
+.header__list-home>li:nth-child(2) a{
+  background: rgb(155, 84, 94) url(../img/gallery.svg) no-repeat 10px/30px;
+  padding-left: 50px;
+}
+
+.header__list-home>li:nth-child(3)>a{
+  background: rgb(155, 84, 94) url(../img/arrow-down.svg) no-repeat right/30px;
+  padding-right: 50px;
 }
 
 .second__list-home{
@@ -58,6 +83,15 @@
 	left: 0;
   width: 100%;
   display: none;
+}
+
+.second__list-home>li:last-child>a{
+    background: rgb(155, 84, 94) url(../img/arrow-left.svg) no-repeat 10px/30px;
+}
+
+.second__list-home li>a{
+  width: 100%;
+  text-align: center;
 }
 
 .second__list-home li:nth-child(4) {
@@ -81,17 +115,59 @@
 }
 
 .main_home{
-  background: #e5c1f1;
+  background-image: linear-gradient( 40deg, rgb(226, 59, 84), rgb(37, 5, 37)) ;
 }
 
 .main_home img{
+  padding: 50px 0;
   display: block;
   margin: 0px auto;
   width: 80%;
   height: 100%;
 }
 
+.footer{
+  background: linear-gradient(rgb(94, 32, 32), rgb(36, 14, 14));
+}
+
+.list_footer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.list_footer> li>a{
+  display: inline-block;
+}
+.list_footer li:first-child>a{
+  background: url(../img/facebook.svg) no-repeat center/30px;
+  width: 30px;
+  height: 30px;
+}
+
+.list_footer li:nth-child(2)>a{
+  background: url(../img/telegram.svg) no-repeat center/30px;
+  width: 30px;
+  height: 30px;
+}
+
+.list_footer li:nth-child(3)>a{
+  background: url(../img/insta.svg) no-repeat center/30px;
+  width: 30px;
+  height: 30px;
+}
+
+.list_footer li:last-child>a{
+  background: url(../img/github.svg) no-repeat center/30px;
+  width: 30px;
+  height: 30px;
+}
+
+
 /* POSITION */
+
+
 .container_galery{
   margin: 0 auto;
   width: 1000px;
